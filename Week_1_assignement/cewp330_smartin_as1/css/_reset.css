@@ -1,0 +1,19 @@
+/*  Light reset. See https://meyerweb.com/eric/tools/css/reset/
+    for a more complete code snippet.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,109 @@
+/* Page styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/beach.jpg);
+  background-position: center;
+  position: relative;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+menu {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80% font-family: gotham, helvetica, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin: -20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.counterStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: turquoise;
+  font-size: 0.6em;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#changer {
+  text-align: left;
+  background-color: #fff;
+  color: black;
+  font-size: 1em !important;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+}
+
+.menu {
+  padding: 0px 10px 0px 10px;
+}
+
+h1 {
+  background-color: #000;
+  color: #fff;
+  font-family: gotham, helvetica, sans-serif;
+  font-size: 3em !important;
+  padding: 50px 20px 50px 20px;
+  margin: 0;
+  top: 0px;
+}
+
+h2 {
+  font-family: gotham, helvetica, sans-serif;
+  font-size: 13em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 1px;
+  letter-spacing: 5px;
+}
+
+#blackStar {
+  color: black;
+  mix-blend-mode: ;
+}
+
+#whiteStar {
+  color: white;
+  mix-blend-mode: ;
+}
+
+#blueStar {
+  color: skyblue;
+  mix-blend-mode: ;
+}
+
+#redStar {
+  color: red;
+  mix-blend-mode: ;
+}
+
+#yellowStar {
+  color: gold;
+  mix-blend-mode: ;
+}

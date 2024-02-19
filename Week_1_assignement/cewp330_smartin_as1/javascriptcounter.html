@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> JS Counter Excercices | Splambo </title>
+		<link rel="stylesheet" type="text/css" href="css/counter-style.css">
+		<link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="banner">
+			<h1>Javascript Counter</h1>
+			<p>Original code from <a href="https://www.youtube.com/channel/UC4fBIlVbskxR74PY_y-iOng">Mitchell Hudson</a></p>
+		</div>
+
+		<h1 id="title">0</h1>
+		<p><button id="my-button">START</button></p>
+		<div class="speed"><strong>Speed:</strong> Counting up by <span class="IncrementsPerSecond"><span id="speed-IncrementsPerSecond"></span> every second</span>
+			/ <span class="SecondsPerOneIncrement"> 1 every <span id="speed-SecondsPerOneIncrement"></span> seconds</span>
+		</div>
+
+		<!-- My Javascript -->
+		<script>
+			var speedDisplayIps = document.getElementById("speed-IncrementsPerSecond");
+			var speedDisplaySpoi = document.getElementById("speed-SecondsPerOneIncrement");
+			var button = document.getElementById("my-button");
+			var title = document.getElementById("title");
+			var time = 0;
+			var myInterval = -1;
+			// Change the odometer's speed
+			var counterSpeed = 0.5;
+			var incrementsPerSecond = 1000/counterSpeed;
+
+			button.addEventListener("click", function(event){
+				// if paused, start the timer
+				if (myInterval == -1) {
+					button.innerHTML = "PAUSE";
+					myInterval = setInterval(function(){
+						time ++;
+						title.innerHTML = time;
+				console.log("Interval:" + time);
+			}, counterSpeed*1);
+				} // else pause
+				else {
+					button.innerHTML = "START";
+					clearInterval(myInterval);
+					myInterval = -1;
+				}
+				
+			})
+
+			// Speed display
+			speedDisplayIps.innerHTML = incrementsPerSecond;	
+			speedDisplaySpoi.innerHTML = counterSpeed/1000;
+
+		</script>		
+	</body>
+</html>

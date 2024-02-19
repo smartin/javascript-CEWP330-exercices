@@ -1,0 +1,180 @@
+/* Import additional CSS from this file to keep the code organized */
+@import "provided-styles.css";
+/* CSS font @import statement */
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap");
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 8, 0.4)
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 12px solid #ef694f;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+p,
+li,
+a {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: red;
+}
+
+/* HEADER STYLE */
+.header {
+  background: #364156 url(http://loremflickr.com/2000/1000/fern) no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#menu {
+  font-size: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #fff;
+  height: 30px;
+  position: absolute;
+  bottom: -112px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 12px solid #fff;
+}
+
+.role {
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  background: #ef694f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 22px;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
+/* SECTION STYLES */
+.section {
+  min-height: 500px;
+  padding: 60px 25px;
+}
+
+.skills {
+  background: #364156;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #364156;
+  background: #ef694f;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-item.last {
+  width: 75%;
+  height: 100px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  background: #212d40;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.education {
+  background: #dddddd;
+}
+
+.education-item img {
+  border: 1px solid #ef694f;
+  border-radius: 3px;
+}
+
+.education-item p {
+  padding: 0px 5px 15px 0px;
+}
+
+/* FOOTER STYLE */
+.legal {
+  background: #fff;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 376px) {
+  .avatar {
+    height: auto;
+  }

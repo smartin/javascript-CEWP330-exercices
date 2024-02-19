@@ -1,0 +1,44 @@
+/*  Base layout */
+.section {
+  min-height: 500px;
+  padding: 24px 16px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1128px;
+  min-width: 320px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 0 0 100%;
+  margin: 0 0 36px;
+}
+
+/* Split into multiple columns when screen width reaches 768px */
+@media screen and (min-width: 768px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  .section {
+    padding: 50px 16px;
+  }
+
+  .column {
+    margin: 0 12px;
+  }
+
+  .half {
+    flex: 0 0 50%;
+  }
+
+  .third {
+    flex: 0 0 32%;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>week 5_0: Intro to Objects</title>
+  <style>
+    section {
+      padding: 20px;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <p>There are a couple of problems with our bio() method from the last example
+    — the output always includes the pronoun "He", even if your person is female,
+    or some other preferred gender classification.</p>
+  <p>And the bio only includes two interests, even if more are listed in the interests array. </p>
+  <p>Can you work out how to fix this in the class definition (constructor)?
+    You can put any code you like inside a constructor (you'll probably need a few conditionals and a loop in the bio method).
+    Think about how the sentences should be structured differently depending on gender,
+    and depending on whether the number of listed interests is 1, 2, or more than 2.</p>
+  <p>Once that is done, have the three buttons display the bio of each person in the section</p>
+
+  <button id="b1" class="bioButton">Bob</button>
+  <button id="b2" class="bioButton">Cathy</button>
+  <button id="b3" class="bioButton">Pat</button>
+
+  <section id="displayBio"></section>
+
+  <script src="js/w5_1_oop_test.js"></script>
+
+</body>
+
+</html>
